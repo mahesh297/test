@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: install webserver in rhel
+      yum:
+        name: httpd
+        state: present
+      when: ansible_os_family == "RedHat"
