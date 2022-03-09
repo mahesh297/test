@@ -8,6 +8,7 @@
                     - one
                     - two
                     - three
+                    - four
 
           - name: ping2
             ping:
