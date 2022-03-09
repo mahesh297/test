@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: install java in rhel
+      yum:
+        name: java-11-openjdk
+        state: present
+      when: ansible_os_family == "RedHat"
