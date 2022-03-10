@@ -1,6 +1,5 @@
 ---
 - hosts: all
-  become: yes
   tasks:
     - name: Check if java is installed
       command: java -version
