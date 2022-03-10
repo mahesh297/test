@@ -8,7 +8,7 @@
         state: present
       when: ansible_os_family == "RedHat"
       
-     - name: install webserver in rhel
+    - name: install webserver in rhel
       yum:
         name: httpd
         state: present
