@@ -7,3 +7,9 @@
         name: java-11-openjdk
         state: present
       when: ansible_os_family == "RedHat"
+      
+     - name: install webserver in rhel
+      yum:
+        name: httpd
+        state: present
+      when: ansible_os_family == "RedHat"
