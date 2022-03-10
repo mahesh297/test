@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
     - name: Check if java is installed
-      command: java -version
+      command: java --version
       register: java_result
       ignore_errors: True
     
